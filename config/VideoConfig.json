@@ -1,0 +1,18 @@
+﻿[
+    {
+        "name":             "RTSP1 Input",
+        "mediaType":        "rtsp",
+        "url":              "rtsp://192.168.1.60:554/stream1",
+        "rtmpUrl":          "rtsp://192.168.1.41/live/test1",
+        "rtmpFlag":         true ,
+        "videoID":          1
+    },
+    {
+        "name":             "UDP Input",
+        "mediaType":        "rtsp",
+        "url":              "rtsp://192.168.1.60:554/stream1",
+        "rtmpUrl":          "rtsp://192.168.1.41/live/test2",
+        "rtmpFlag":         true ,
+        "videoID":          2
+    }
+]

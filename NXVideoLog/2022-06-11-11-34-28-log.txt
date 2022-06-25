@@ -1,0 +1,62 @@
+2022-06-11-11-34-28 Debug: the settings path is: "/home/mmc/nxVideoPro/config/system.ini"
+2022-06-11-11-34-28 Debug:  initMultiVideo rtmp flag:  true
+2022-06-11-11-34-28 Debug:  _updatePlayStatus : 1
+2022-06-11-11-34-28 Debug: Enter useTcpConnection
+2022-06-11-11-34-28 Debug:  _updatePlayStatus : 0
+2022-06-11-11-34-28 Debug:  NxVideoCore::_connected :-----
+2022-06-11-11-34-28 Debug:  _updatePlayStatus : 1
+2022-06-11-11-34-28 Debug: slotStartPlayVideo do 
+2022-06-11-11-34-28 Debug:  _updatePlayStatus : 3
+2022-06-11-11-34-28 Debug: --Is Running--
+2022-06-11-11-34-28 Debug: Starting push rtmp stream "rtsp://192.168.1.41/live/test1"
+2022-06-11-11-34-28 Debug:  _updatePushStatus : 1
+2022-06-11-11-34-28 Debug: New video file: "rtsp://192.168.1.41/live/test1"  "rtsp://192.168.1.60:554/stream1"
+2022-06-11-11-34-28 Debug:  _updatePushStatus : 0
+2022-06-11-11-34-28 Debug:  _updatePushStatus : 2
+2022-06-11-11-34-28 Debug: Push rtmp stream started "rtsp://192.168.1.60:554/stream1"
+2022-06-11-11-34-28 Debug:  _updatePlayStatus : 2
+2022-06-11-11-34-29 Debug:  _updatePushStatus : 0
+2022-06-11-11-34-29 Debug:  initMultiVideo rtmp flag:  true
+2022-06-11-11-34-29 Debug:  _updatePlayStatus : 1
+2022-06-11-11-34-29 Debug: Enter useTcpConnection
+2022-06-11-11-34-29 Debug:  _updatePlayStatus : 0
+2022-06-11-11-34-29 Debug:  NxVideoCore::_connected :-----
+2022-06-11-11-34-29 Debug:  _updatePlayStatus : 1
+2022-06-11-11-34-29 Debug: slotStartPlayVideo do 
+2022-06-11-11-34-29 Debug:  _updatePlayStatus : 3
+2022-06-11-11-34-29 Debug: --Is Running--
+2022-06-11-11-34-29 Debug: Starting push rtmp stream "rtsp://192.168.1.41/live/test2"
+2022-06-11-11-34-29 Debug:  _updatePushStatus : 1
+2022-06-11-11-34-29 Debug: New video file: "rtsp://192.168.1.41/live/test2"  "rtsp://192.168.1.60:554/stream1"
+2022-06-11-11-34-29 Debug:  _updatePushStatus : 0
+2022-06-11-11-34-29 Debug:  _updatePushStatus : 2
+2022-06-11-11-34-29 Debug: Push rtmp stream started "rtsp://192.168.1.60:554/stream1"
+2022-06-11-11-34-29 Debug:  _updatePlayStatus : 2
+2022-06-11-11-34-30 Debug: 0xaaaae2810f70 ,  application/x-rtp; application/x-rdt
+2022-06-11-11-34-30 Debug: 0xaaaae26d5400 ,  ANY
+2022-06-11-11-34-30 Debug:  _updatePushStatus : 3
+2022-06-11-11-34-30 Debug:  _updatePlayStatus : 3
+../NxVideoPro-2/main.cpp442022-06-11-11-34-30 Critical: GStreamer error: Could not open resource for writing.
+../NxVideoPro-2/main.cpp442022-06-11-11-34-30 Critical: Could not open resource for writing. 6
+2022-06-11-11-34-30 Debug: stopPushVideo bForce: true
+2022-06-11-11-34-30 Debug: Stopping push rtmp stream "rtsp://192.168.1.60:554/stream1"
+2022-06-11-11-34-30 Debug:  _updatePushStatus : 4
+../NxVideoPro-2/main.cpp442022-06-11-11-34-30 Critical: Branch EOS was NOT sent
+2022-06-11-11-34-30 Debug: stopPlay pushstatus:  4
+2022-06-11-11-34-30 Debug: Stopping push rtmp stream failed 
+
+2022-06-11-11-34-30 Debug:  _updatePushStatus : 3
+2022-06-11-11-34-30 Debug:  _updatePushStatus : 0
+2022-06-11-11-34-31 Debug: 0xaaaae2810f70 ,  application/x-rtp; application/x-rdt
+2022-06-11-11-34-31 Debug: 0xaaaae26d5400 ,  ANY
+2022-06-11-11-34-31 Debug:  _updatePushStatus : 3
+2022-06-11-11-34-31 Debug:  _updatePlayStatus : 3
+../NxVideoPro-2/main.cpp442022-06-11-11-34-31 Critical: GStreamer error: Could not open resource for writing.
+../NxVideoPro-2/main.cpp442022-06-11-11-34-31 Critical: Could not open resource for writing. 6
+2022-06-11-11-34-31 Debug: stopPushVideo bForce: true
+2022-06-11-11-34-31 Debug: Stopping push rtmp stream "rtsp://192.168.1.60:554/stream1"
+2022-06-11-11-34-31 Debug:  _updatePushStatus : 4
+2022-06-11-11-34-31 Debug: Branch EOS was sent
+2022-06-11-11-34-31 Debug:  _updatePushStatus : 5
+2022-06-11-11-34-35 Debug: Enter the NxVideoFuse
+2022-06-11-11-34-35 Debug: cmd is: "gst-launch-1.0 videomixer name=mix ! queue ! nvvidconv ! nvv4l2h264enc ! h264parse ! flvmux ! queue ! rtmpsink location='rtmp://push.mmcuav.cn/live/test5 live=1'                            rtspsrc location=rtsp://192.168.1.238:554/rtsp_live0 ! queue ! decodebin ! nvvidconv ! queue ! mix.                            rtspsrc location=rtsp://192.168.1.60:554/stream1 ! queue ! decodebin ! nvvidconv ! video/x-raw,width=640,height=360 ! videobox top=1 left=0 right=0 bottom=0 ! queue ! mix."
