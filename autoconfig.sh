@@ -17,7 +17,8 @@ sudo apt-get install libpulse-dev libudev-dev libpci-dev libnss3-dev libasound2-
 sudo apt-get install libcups2* pulseaudio* alsa-* mesa-* systemd* system-* libgudev-1.0-dev libatspi2.0* at-spi2-* libclipper-dev -y
 sudo apt-get install nodejs gyp ninja-build libdrm-dev -y
 sudo apt-get install bluez* bluetooth libbluetooth* -y
-sudo apt-get install qt5-default qtcreator -y 
+sudo apt-get install qt5-default -y 
+#sudo apt-get install qt5-default qtcreator -y 
 sudo apt-get install -y qml-module-qtquick-controls2 
 sudo apt-get install -y qml-module-qtquick-controls 
 sudo apt-get install -y qtquickcontrols2-12-dev
@@ -34,4 +35,7 @@ sudo -H pip3 install jetson-stats
 sudo apt-get install ffmpeg -y
 sudo apt-get install nginx -y
 sudo apt-get remove vulkan* -y
-
+sudo apt-get install gcc automake autoconf libtool make -y
+sudo apt-get install -y udhcpc udhcpd lrzsz
+sudo apt-get install -y zip unzip
+sudo apt-get install -y netplan.io
