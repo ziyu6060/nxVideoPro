@@ -1,0 +1,9 @@
+prefix=/home/mmc/srs/trunk/objs/Platform-Linux-5.10.65-GCC9.4.0-SRS5-aarch64/openssl-1.1-fit/_release
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: OpenSSL
+Description: Secure Sockets Layer and cryptography libraries and tools
+Version: 1.1.1b
+Requires: libssl libcrypto

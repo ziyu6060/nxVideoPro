@@ -1,0 +1,14 @@
+prefix=/home/mmc/srs/trunk/objs/Platform-Linux-5.10.65-GCC9.4.0-SRS5-aarch64/ffmpeg-4-fit/_release
+exec_prefix=${prefix}
+libdir=/home/mmc/srs/trunk/objs/Platform-Linux-5.10.65-GCC9.4.0-SRS5-aarch64/ffmpeg-4-fit/_release/lib
+includedir=/home/mmc/srs/trunk/objs/Platform-Linux-5.10.65-GCC9.4.0-SRS5-aarch64/ffmpeg-4-fit/_release/include
+
+Name: libavutil
+Description: FFmpeg utility library
+Version: 56.22.100
+Requires: 
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavutil -pthread -lm -lXv -lX11 -lXext
+Libs.private: 
+Cflags: -I${includedir}
