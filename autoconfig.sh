@@ -7,7 +7,7 @@ sudo apt-get install openssl libssl-dev -y
 sudo apt-get install bison build-essential -y
 sudo apt-get install perl git gperf ruby -y
 sudo apt-get install libclang-10-dev llvm-10* -y
-sudo apt-get install xcb* libxcb* libx11* libxkbcommon* libxrender* libxi-dev -y
+#sudo apt-get install xcb* libxcb* libx11* libxkbcommon* libxrender* libxi-dev -y
 sudo apt-get install libgl1-mesa-dev libglu1-mesa-dev libegl1-mesa-dev freeglut* libgles* libglew* -y
 sudo apt-get install flex libicu-dev libxslt-dev -y
 sudo apt-get install libssl-dev libxcursor-dev libxcomposite-dev libxdamage-dev libxrandr-dev -y 
@@ -15,8 +15,8 @@ sudo apt-get install libdus* dbus* -y
 sudo apt-get install libfontconfig1-dev fontconfig libcap-dev libxtst-dev libxext-dev -y 
 sudo apt-get install libpulse-dev libudev-dev libpci-dev libnss3-dev libasound2-dev libxss-dev -y
 sudo apt-get install libcups2* pulseaudio* alsa-* mesa-* systemd* system-* libgudev-1.0-dev libatspi2.0* at-spi2-* libclipper-dev -y
-sudo apt-get install nodejs gyp ninja-build libdrm-dev -y
-sudo apt-get install bluez* bluetooth libbluetooth* -y
+#sudo apt-get install nodejs gyp ninja-build libdrm-dev -y
+#sudo apt-get install bluez* bluetooth libbluetooth* -y
 sudo apt-get install qt5-default -y 
 #sudo apt-get install qt5-default qtcreator -y 
 sudo apt-get install -y qml-module-qtquick-controls2 
